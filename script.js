@@ -96,4 +96,36 @@
 // console.log(filterNumbers([1, 4, 8, 1, 20], 5));
 
 
-// 7.  остортировать массив по возрастанию, и макс- это length-1, а min - это первый
+// 7. A function that returns object with min and max numbers from array of numbers.
+
+// function minMax(arr) {
+//     arr.sort((a,b) => a - b);
+//     var obj = {
+//         min:arr[0],
+//         max:arr[arr.length-1]
+//     }
+//     return obj
+// }
+// console.log(minMax([2,5,66,1,20,100000,12321]))
+
+
+// 8. A function that returns average of numbers in array.
+
+
+// function average(arr) {
+
+// return arr.reduce((a,b) => a+b)/arr.length
+
+// }
+
+// console.log(average([1,2,3,4]))
+
+
+//9. A function which concats all first-nested arrays in one array (use reduce):
+
+function concatFirstNestedArrays(arr) {
+
+    return arr.reduce ((a,b) =>  a.concat(b))  /// a=[0,1] b= [2,3]  при первом вызове функции при втором a=[0,1,2,3] b= [4,5];
+}
+
+console.log(concatFirstNestedArrays([[0, 1], [2, 3], [4, 5]]))
