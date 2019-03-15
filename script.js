@@ -123,9 +123,60 @@
 
 //9. A function which concats all first-nested arrays in one array (use reduce):
 
-function concatFirstNestedArrays(arr) {
+// function concatFirstNestedArrays(arr) {
 
-    return arr.reduce ((a,b) =>  a.concat(b))  /// a=[0,1] b= [2,3]  при первом вызове функции при втором a=[0,1,2,3] b= [4,5];
-}
+//     return arr.reduce ((a,b) =>  a.concat(b))  /// a=[0,1] b= [2,3]  при первом вызове функции при втором a=[0,1,2,3] b= [4,5];
+// }
 
-console.log(concatFirstNestedArrays([[0, 1], [2, 3], [4, 5]]))
+// console.log(concatFirstNestedArrays([[0, 1], [2, 3], [4, 5]]))
+
+
+
+// // 10.A function accepts array of users and returns object of users where key is user id and value user data.
+
+
+// const users = [
+//     { id: 1, name: 'John', birthday: '1999-2-12' },
+//     { id: 2, name: 'Bill', birthday: '1999-1-19' },
+//     { id: 3, name: 'Carol', birthday: '1999-3-11' },
+//     { id: 4, name: 'Luce', birthday: '1999-2-22' }
+//   ];
+
+
+//   function usersToObject(users) {
+    
+//     const result= {}
+
+//     users.forEach(element => {result[element.id]= element
+      
+//     });
+//   
+//    return result;
+   
+
+//   }
+
+//   console.log(usersToObject(users))
+  
+  
+
+
+
+// // 11. A function returns array of users that have birthdays in a specific month.
+
+
+// const users = [
+//       { id: 1, name: 'John', birthday: '1999-2-12' },
+//       { id: 2, name: 'Bill', birthday: '1999-1-19' },
+//       { id: 3, name: 'Carol', birthday: '1999-3-11' },
+//       { id: 4, name: 'Luce', birthday: '1999-2-22' }
+//     ];
+  
+  
+// function filterUsersByMonth(users, month) {
+
+//   return users.filter(item => new Date(item.birthday).getMonth() === month)
+// }
+
+//   console.log(filterUsersByMonth(users, 1));
+  
