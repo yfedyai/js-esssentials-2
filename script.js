@@ -180,3 +180,38 @@
 
 //   console.log(filterUsersByMonth(users, 1));
   
+
+// function adult(birthday) {
+//   birthday = new Date(birthday);
+//   console.log('birthday: ', birthday);
+
+//   let minDdate = new Date();
+
+//   minDdate.setFullYear(minDdate.getFullYear()-18)
+//   console.log('minDdate: ', minDdate);
+//   return birthday < minDdate;
+// }
+
+// console.log(adult("1999-6-12"))
+
+
+// //12 A function returns name and age of users separated by comma that are older than 18
+// const users = [
+//   { name: 'John', birthday: '2001-6-12' },
+//   { name: 'Bill', birthday: '2000-1-19' }, 
+//   { name: 'Carol', birthday: '2003-10-11' },
+//   { name: 'Luce', birthday: '1999-11-22' }
+// ];
+
+// function getAdultNames(users) {
+//   let minDdate = new Date().setFullYear(new Date().getFullYear()-18);  // time when offical age is 18
+ 
+
+//  return users.filter(item => new Date(item.birthday) < minDdate).map(item => item.name +
+//   ' ' +(new Date().getFullYear() - new Date(item.birthday).getFullYear())).join()
+
+// }
+   
+//  console.log(getAdultNames(users));
+
+
